@@ -41,7 +41,6 @@ model.fit(
         epochs=5,
         validation_data=test_set,
         validation_steps=800,
-        verbose=0
         )
 model.save('/root/db/cnn_cat_dog.h5')
 df_loss=pd.DataFrame(model.history.history)
