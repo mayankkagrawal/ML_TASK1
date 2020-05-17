@@ -46,4 +46,4 @@ model.fit(
 model.save('/root/db/cnn_cat_dog.h5')
 df_loss=pd.DataFrame(model.history.history)
 accuracy=df_loss.iloc[615,0]
-print(accuracy)
+print(accuracy))
