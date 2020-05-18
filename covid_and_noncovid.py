@@ -25,8 +25,6 @@ model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_sha
 ))
 
 model.add(MaxPooling2D(pool_size=(2,2)))
-model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_shape=(64,64,3)))
-model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Flatten())
 
 model.add(Dense(units=128,activation='relu'))
@@ -85,7 +83,8 @@ model.fit(
 
         validation_data=test_set,
 
-        validation_steps=800)
+        validation_steps=800,
+        verbose=0)
 
 
 
