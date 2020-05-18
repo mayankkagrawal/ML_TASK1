@@ -14,11 +14,11 @@ model.add(Convolution2D(filters=32,kernel_size=(3,3),activation='relu',input_sha
 model.add(MaxPooling2D(pool_size=(2,2)))
 #model.summary()
 model.add(Flatten())
-model.summary()
+#model.summary()
 model.add(Dense(units=128,activation='relu'))
 #model.summary()
 model.add(Dense(units=1,activation='sigmoid'))
-model.summary()
+#model.summary()
 from keras.optimizers import Adam
 model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 from keras_preprocessing.image import ImageDataGenerator
