@@ -41,7 +41,7 @@ model.fit(
         epochs=5,
         validation_data=test_set,
         validation_steps=800,
-        verbose=0)
+        )
 
 model.save('cnn_cat_dog.h5')
 
